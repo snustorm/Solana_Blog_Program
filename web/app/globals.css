@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('/fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('/fonts/Satoshi-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Repeat for other weights/styles as needed */
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Black.woff2') format('woff2'),
+         url('/fonts/Satoshi-Black.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+
+.input_bar {
+    @apply mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:border-[#4a5759] hover:border-[#4a5759] sm:text-sm;
+}
+
+.submit_button {
+    @apply flex items-center py-2 px-6 bg-[#dedbd2] text-gray-700 rounded-full hover:bg-[#c4c1b7] transition duration-300 ease-in-out;
+}

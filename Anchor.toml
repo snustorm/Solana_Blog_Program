@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+blog_program = "8ggGfcDQLdvC5iX7drVqPZmmBJrwgBd2WRDVuKyC8n2b"
+
+[programs.localnet]
+blog_program = "8ggGfcDQLdvC5iX7drVqPZmmBJrwgBd2WRDVuKyC8n2"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = "/Users/chester/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
